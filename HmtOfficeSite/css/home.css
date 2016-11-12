@@ -1,0 +1,163 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font:14px/1.5 'Helvetica',Arial, Helvetica ,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+	 -webkit-font-smoothing: antialiased;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.container{
+	position: relative;
+	overflow: hidden;
+}
+
+.banner{
+	margin-top:60px;
+	width: 15000px;
+	color:#b8b8b8;
+}
+
+.banner li{
+	display: block;
+	background:url(../images/middle-bg.jpg) 0 0 no-repeat;
+	background-position: center;
+	background-size:100% 100%;
+	height: 408px;
+	width: 1349px;
+  cursor: pointer;
+	float: left;
+}
+
+.banner .office h1{
+	 text-shadow:0 1px 1px #575757;
+}
+.banner a{
+  color:#b8b8b8;
+	font-size:16px;
+}
+
+.office .introduce{
+	margin:100px;
+	width: 400px;
+}
+.office p{
+	padding: 10px 0;
+	font-size:15px;
+}
+.office i{
+	display: inline-block;
+	background:url(../images/arrow.png) no-repeat;
+	background-size:20px 20px;
+	width: 20px;
+	height: 20px;
+	margin-right: 5px;
+}
+.work{
+	overflow: hidden;
+/* 	margin: 10px 2%; */
+	padding:0 2%;
+	width: 100%;
+	background: #F6F5F5;
+}
+.work_title{
+	margin: 20px 0;
+	text-align: center;
+	font-weight: 550;
+}
+
+.work_post{
+	float: left;
+	-moz-box-sizing:border-box;
+	box-sizing: border-box;
+	background: #fff;
+	margin:0 15px 30px;
+	 width: 300px;
+	 height: 300px;
+
+	position: relative;
+}
+
+.work_img img{
+  width: 300px;
+	height: 300px;
+	background-color: #fff;
+}
+
+.work_post h2{
+	font-weight: 500;
+	line-height: 30px;
+	text-align:center;
+	font-size: 18px;
+	color:#9A9999;
+}
+
+.work_post:hover{
+	-webkit-box-shadow: #666 0px 0px 10px;
+-moz-box-shadow: #666 0px 0px 10px;
+box-shadow: #666 0px 0px 10px;
+}
+
+.mask{
+	width: 100%;
+	height: 300px;
+	background: black;
+	color: #fff;
+	top: 50%;
+	opacity: 0;
+	text-align: center;
+	line-height: 239px;
+	font-size: 20px;
+	position: absolute;
+}
+
+.mask span{
+	display: block;
+	float: left;
+}
+.mask span.left{
+	left: -80px;
+	opacity:0.75;
+	width:40px;
+	height: 13px;
+	border-top: 3px solid #e92929;
+	display: block;
+	float: left;
+	margin-top:50%;
+	margin-left: 3%;
+	
+}
+.mask span.top{
+	display: inline-block;
+	opacity: 0.75;
+	width: 180px;
+	height:100px;
+  line-height:240px;
+	padding-top:30px;
+/*   margin:0 10px; */
+/* 	position: absolute;
+	left: 20%;
+	top:10%; */
+}
+.mask span.right{
+
+	opacity: 0;
+	opacity:0.75;
+	width:40px;
+	height: 13px;
+	border-top: 3px solid #e92929;
+	display: block;
+	float: right;
+	margin-top: 50%;
+	margin-right:3%; 
+}
+

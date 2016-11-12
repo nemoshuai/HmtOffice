@@ -1,0 +1,141 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	font:14px/1.5 'Helvetica',Arial, Helvetica ,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+	 -webkit-font-smoothing: antialiased;
+}
+
+a{
+	text-decoration: none;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.wrap{
+	height: 350px;
+	width:100%;
+	background: #000;
+	position:relative;
+	z-index: 400;
+}
+
+.shadow-slide{
+	background: url(../images/shadow-slide.png) center top repeat-x;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 400;
+	height: 186px;
+	pointer-events: none;
+}
+
+.header_contact{
+	background:url(../images/download.jpg) no-repeat;
+	width: 100%;
+	height: inherit;
+	background-size: cover;
+	background-position: 50%,60%;
+}
+
+.header_contact h1{
+	top:77%;
+  position: relative !important;
+	color: #FFF;
+	font-weight: 800;
+  text-align: center;
+	text-transform: uppercase;
+	text-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+	font-size:30px;
+	letter-spacing: 2px;
+	padding: 0 7%;
+}
+
+.header_contact span{
+	display: block;
+	color: #FFF;
+	max-height: 750px;
+}
+
+.bar{
+	height: 64px;
+	width: 100%;
+	background-color: #000;
+}
+
+.form-box{
+	position: relative;
+	overflow: hidden;
+	background-color: #121212;
+	float: left;
+   width: 100%;
+   text-align: center;
+}
+
+.setionwrap{
+	  width: 100%;
+    padding: 0;
+    max-width: 960px;
+    overflow: hidden;
+	  display: inline-block;
+    position: relative;
+	  margin-top: 30px;
+}
+
+
+.formblock{
+/* 	    float: left; */
+	    margin-left: 30%;
+      width: 40%;
+      margin-right: 2%;
+
+}
+
+.formblock .forminput{
+	    background: #262626;
+      border: none;
+			width: 95%;
+			color: #fff;
+			font-size: 19px;
+			/*font-family:'Roboto';*/
+			padding: 2.5%;
+			border-radius: 3px;
+			margin-bottom: 6%;
+			font-weight: 300;
+
+}
+
+#form-msg .forminput {
+/* 	width:98%; */
+	padding:1%;
+	height:5em; 
+	margin-bottom:0;
+	
+font-family: inherit;
+}
+#form-send{
+	width: 100%;
+	margin-left: 0px;
+}
+
+#form-send input{
+	  width: 100%;
+		max-width: 300px;
+		background:#e90d29;
+		color: #FFF;
+		margin: 2% 0 30px;
+		border: none;
+	/*	font-family: 'Roboto';*/
+		font-size: 14px;
+		padding: .4em 0;
+		border-radius: 3px;
+		cursor: pointer;
+}
+.footer{
+	overflow: hidden;
+}
+
