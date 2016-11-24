@@ -38,9 +38,11 @@ ul{
 }
 .history_txt{
 	width: 500px;
-	color:#FFf;
+	color: #000;
 	margin-left: 5%;
 	margin-top:5%;
+	padding: 10px;
+	border-radius: 3%;
 }
 
 .history_txt p{
@@ -48,7 +50,34 @@ ul{
 	line-height: 30px;
 }
 
-
+.txt_mask{
+	height: 100%;
+	width: 100%;
+	background-color:#939393;
+  opacity: 0.5;
+	position: absolute;
+/* 	top:-100%; */
+}
+.txt_mask_style{
+	-webkit-transform-origin: 0% 0%;
+	-webkit-animation: showMask 1s both ease-in;
+	-moz-transform-origin: 0% 0%;
+	-moz-animation: showMask 1s both ease-in;
+	transform-origin: 0% 0%;
+	animation: showMask 1s both ease-in;
+}
+@-webkit-keyframes showMask {
+	from{top:0;}
+	to{top:-100%;}
+}
+@-moz-keyframes showMask {
+	from{top:0;}
+	to{top:-100%;}
+}
+@keyframes showMask{
+		from{top:0;}
+	 to{top:-100%;}
+}
 .page1{
 	background:url(../images/history-one.jpg) no-repeat;
 	background-size:100%,100%;
@@ -165,4 +194,24 @@ ul{
 	40% { transform: rotateZ(17deg); }
 	60% { transform: rotateZ(16deg); }
 	100% { transform: translateY(100%) rotateZ(17deg); }
+}
+
+.slide-arrow{
+	position: absolute;
+	z-index: 700;
+	height: 100%;
+	width: 12%;
+	top:0;
+	opacity: 0;
+}
+.slide-arrow.left{
+	left: 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0,0) 100%);
+}
+.slide-arrow.right{
+	right: 0;
+	background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0,0.3) 100%);
+}
+.slide-arrow.left:hover,.slide-arrow.right:hover{
+	opacity: 1;
 }
